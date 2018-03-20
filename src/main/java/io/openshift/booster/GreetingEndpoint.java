@@ -32,6 +32,6 @@ public class GreetingEndpoint {
     @Produces("application/json")
     public Greeting greeting(@QueryParam("name") String name) {
         String suffix = name != null ? name : "World";
-        return new Greeting(String.format(template, suffix));
+        return new Greeting(String.format(template, String.format(template, String.format(template, suffix))));
     }
 }
